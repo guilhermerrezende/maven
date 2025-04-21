@@ -168,7 +168,7 @@ cd atividade-maven
 
 ---
 
-## 📄 Estrutura do Projeto
+## 📄 Estrutura do Projeto (Padrão MAVEN) 
 ```
 atividade-maven/
  ├── pom.xml
