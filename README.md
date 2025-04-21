@@ -1,6 +1,18 @@
 # Atividade Prática MAVEN 🚀
 
-Este guia apresenta um passo a passo completo para configurar o Maven, criar um projeto Java Maven, implementar testes unitários e de integração, e visualizar relatórios de testes. Serve para sistemas Windows e Linux.
+Nesta atividade prática, o objetivo é compreender o funcionamento do Maven como ferramenta de automação de builds em projetos Java. A proposta é criar um projeto Maven do zero, implementar testes automatizados com JUnit, gerar relatórios e realizar o build automatizado da aplicação.
+
+Ao final da atividade, você será capaz de:
+
+Criar e estruturar um projeto Maven.
+
+Automatizar o processo de build (compilação, empacotamento e testes).
+
+Escrever e executar testes com JUnit.
+
+Gerar relatórios HTML com os resultados dos testes.
+
+Interpretar e analisar os relatórios gerados.
 
 ---
 
