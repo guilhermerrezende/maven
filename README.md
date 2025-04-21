@@ -189,10 +189,31 @@ public class Calculadora {
     public int somar(int a, int b) {
         return a + b;
     }
+
     public int multiplicar(int a, int b) {
         return a * b;
     }
 }
+
+```
+### `src/main/java/com/exemplo/CalculadoraService.java`
+
+```java
+package com.exemplo;
+
+public class CalculadoraService {
+    private final Calculadora calculadora;
+
+    public CalculadoraService(Calculadora calculadora) {
+        this.calculadora = calculadora;
+    }
+
+    public int calcularDobroDaSoma(int a, int b) {
+        int soma = calculadora.somar(a, b);
+        return calculadora.multiplicar(soma, 2);
+    }
+}
+
 ```
 
 ### Teste Unitário – `CalculadoraTest.java`
@@ -208,7 +229,14 @@ public class CalculadoraTest {
         Calculadora calc = new Calculadora();
         assertEquals(5, calc.somar(2, 3));
     }
+
+    @Test
+    public void testMultiplicar() {
+        Calculadora calc = new Calculadora();
+        assertEquals(20, calc.multiplicar(4, 5));
+    }
 }
+
 ```
 
 ### Teste de Integração – `CalculadoraIntegracaoTest.java`
@@ -220,20 +248,41 @@ import static org.junit.Assert.*;
 
 public class CalculadoraIntegracaoTest {
     @Test
-    public void testMultiplicacao() {
-        Calculadora calc = new Calculadora();
-        int resultado = calc.multiplicar(4, 5);
-        assertEquals(20, resultado);
+    public void testCalcularDobroDaSoma() {
+        Calculadora calculadora = new Calculadora();
+        CalculadoraService service = new CalculadoraService(calculadora);
+
+        int resultado = service.calcularDobroDaSoma(2, 3); // (2 + 3) * 2 = 10
+        assertEquals(10, resultado);
     }
 }
+
 ```
 
 Crie este arquivo em:
 ```
 src/test/java/com/exemplo/CalculadoraIntegracaoTest.java
 ```
+## Estrutura do Projeto
+```css
 
----
+atividade-maven/
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── exemplo/
+│   │               ├── Calculadora.java
+│   │               └── CalculadoraService.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── exemplo/
+│                   ├── CalculadoraTest.java
+│                   └── CalculadoraIntegracaoTest.java
+
+```
 
 ## 🔧 Arquivo `pom.xml` completo
 ```xml
