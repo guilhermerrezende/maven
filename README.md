@@ -29,7 +29,7 @@ O Maven é uma ferramenta de automação de compilação e gerenciamento de depe
 
 ### 1. Instalar o Java (JDK 17 ou superior)
 - Windows: https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
- Instalador do Windows x64	- https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe
+- Instalador do Windows x64	- https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe
 
 - Linux (Debian/Ubuntu):
 ```bash
@@ -43,7 +43,7 @@ java -version
 ```
 
 ### 2. Instalar o Maven
-- Baixe: https://maven.apache.org/download.cgi 	      ATENÇÃO: Baixar o arquivo: apache-maven-3.9.9-bin.zip
+- Baixe: apache-maven-3.9.9-bin.zip
 - Extraia o ZIP em uma pasta
 
 ---
