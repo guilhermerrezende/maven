@@ -43,7 +43,7 @@ java -version
 ```
 
 ### 2. Instalar o Maven
-- Baixe: apache-maven-3.9.9-bin.zip
+- Baixe: [apache-maven-3.9.9-bin.zip](https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip)
 - Extraia o ZIP em uma pasta
 
 ---
